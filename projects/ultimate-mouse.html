@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ultimate Mouse // MOS1</title>
+<meta name="description" content="Ultimate Mouse, a 5-in-1 custom gaming mouse on an ESP32-S3. Build log by firmware iteration, photos and gifs.">
+
+<link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="status-badge-fixed">
+  <span class="dot-live"></span>
+  <span>SYSTEM STATUS: ONLINE</span>
+</div>
+
+<div class="altimeter" id="altimeter">
+  <div class="tape" id="altTape"></div>
+  <div class="pointer-line"></div>
+  <div class="value-box" id="altValue">000</div>
+</div>
+
+<div class="logo-corner">
+  <a href="../index.html"><img src="../assets/img/logo-mos1.png" alt="Back to MOS1 projects"></a>
+</div>
+
+<div class="wrap">
+  <p class="breadcrumb"><a href="../index.html">Projects</a> / MOD&#8209;02 / Ultimate Mouse</p>
+</div>
+
+<header class="project-hero">
+  <div class="wrap">
+    <p class="eyebrow"><span class="status active">ACTIVE</span></p>
+    <h1>Ultimate<br><span style="color:var(--signal)" class="flap-text">Mouse</span></h1>
+    <p class="summary">
+      A 5-in-1 custom gaming mouse that switches between mouse, gamepad and HOTAS modes on the fly.
+      Optical sensor, IMU, OLED display, 2.4GHz radio and a bank of macro buttons, all on one board,
+      after seven major firmware iterations.
+    </p>
+
+    <div class="datasheet">
+      <div class="cell"><div class="k">MCU</div><div class="v">ESP32&#8209;S3 Super Mini</div></div>
+      <div class="cell"><div class="k">SENSOR</div><div class="v">PMW3360 (optical)</div></div>
+      <div class="cell"><div class="k">IMU</div><div class="v">MPU&#8209;6500 (direct I2C)</div></div>
+      <div class="cell"><div class="k">DISPLAY</div><div class="v">SSD1306 OLED</div></div>
+      <div class="cell"><div class="k">RADIO</div><div class="v">NRF24L01+PA+LNA</div></div>
+      <div class="cell"><div class="k">LIGHTING</div><div class="v">WS2812B (FastLED)</div></div>
+      <div class="cell"><div class="k">MODES</div><div class="v">GAME / MOUSE / GPAD / HOTAS / HOTAS+</div></div>
+      <div class="cell"><div class="k">LINK</div><div class="v">WIRE + 2.4G (dual mode)</div></div>
+    </div>
+  </div>
+</header>
+
+<main class="section buildlog">
+  <div class="wrap">
+
+    <div class="tbd-banner" data-reveal>
+      ⚠ PHOTOS/GIFS NOT UPLOADED YET. The slots below are placeholders.
+    </div>
+
+    <div class="buildlog-list">
+
+      <article class="step" data-reveal>
+        <div class="step-index">01</div>
+        <div>
+          <span class="step-tag">ITERATION 01</span>
+          <h3>Base platform: ESP32&#8209;S3 + PMW3360 + OLED</h3>
+          <p>First working firmware: the PMW3360 optical sensor outputs coordinates, the SSD1306 renders bitmap UI.</p>
+          <div class="gallery-grid">
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;01</p></figure>
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;02</p></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="step" data-reveal>
+        <div class="step-index">02</div>
+        <div>
+          <span class="step-tag">ITERATION 02</span>
+          <h3>IMU + rotary encoder</h3>
+          <p>Added the MPU&#8209;6500 via direct I2C register access and wired up a rotary encoder; fixed its spin direction.</p>
+          <div class="gallery-grid">
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;01</p></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="step" data-reveal>
+        <div class="step-index">03</div>
+        <div>
+          <span class="step-tag">ITERATION 03</span>
+          <h3>Joystick calibration</h3>
+          <p>Fixed an ADC range mismatch in the analog joystick and throttle slider axis calibration.</p>
+          <div class="gallery-grid">
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>GIF&nbsp;01</p></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="step" data-reveal>
+        <div class="step-index">04</div>
+        <div>
+          <span class="step-tag">ITERATION 04</span>
+          <h3>Cursor drift fix</h3>
+          <p>Tracked down and fixed the cause of unwanted cursor movement in mouse mode.</p>
+          <div class="gallery-grid">
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;01</p></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="step" data-reveal>
+        <div class="step-index">05</div>
+        <div>
+          <span class="step-tag">ITERATION 05</span>
+          <h3>Gyro calibration + smoothing</h3>
+          <p>Fine-tuned the IMU: gyroscope calibration and reading smoothing for a stable response in GPAD / HOTAS modes.</p>
+          <div class="gallery-grid">
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>GIF&nbsp;01</p></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="step" data-reveal>
+        <div class="step-index">06</div>
+        <div>
+          <span class="step-tag">ITERATION 06</span>
+          <h3>Macro-button multiplexer + radio link</h3>
+          <p>Added a CD74HC4067 multiplexer for extra buttons and an NRF24L01+PA+LNA module for wireless 2.4G mode.</p>
+          <div class="gallery-grid">
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;01</p></figure>
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;02</p></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="step" data-reveal>
+        <div class="step-index">07</div>
+        <div>
+          <span class="step-tag">ITERATION 07 - CURRENT</span>
+          <h3>5 device modes + macro recording</h3>
+          <p>Implemented GAME / MOUSE / GPAD / HOTAS / HOTAS+ modes plus a system for recording and replaying macros.</p>
+          <div class="gallery-grid">
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>GIF&nbsp;01</p></figure>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>MOD&#8209;02 ULTIMATE MOUSE</p>
+    <div class="footer-links">
+      <a href="../index.html">← All projects</a>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">✕</span>
+  <div class="lightbox-content"></div>
+</div>
+
+<script src="../assets/js/particles.js"></script>
+<script src="../assets/js/flap.js"></script>
+<script src="../assets/js/scrollbar.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

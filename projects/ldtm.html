@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LDTM: Lucid Dream Trigger Machine // MOS1</title>
+<meta name="description" content="LDTM, a headboard-mounted Lucid Dream Trigger Machine built on an ESP32-C3. Build log, photos and gifs by stage.">
+
+<link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="status-badge-fixed">
+  <span class="dot-live"></span>
+  <span>SYSTEM STATUS: ONLINE</span>
+</div>
+
+<div class="altimeter" id="altimeter">
+  <div class="tape" id="altTape"></div>
+  <div class="pointer-line"></div>
+  <div class="value-box" id="altValue">000</div>
+</div>
+
+<div class="logo-corner">
+  <a href="../index.html"><img src="../assets/img/logo-mos1.png" alt="Back to MOS1 projects"></a>
+</div>
+
+<div class="wrap">
+  <p class="breadcrumb"><a href="../index.html">Projects</a> / MOD&#8209;01 / LDTM</p>
+</div>
+
+<header class="project-hero">
+  <div class="wrap">
+    <p class="eyebrow"><span class="status dev">IN&nbsp;DEV</span></p>
+    <h1>LDTM<br><span style="color:var(--signal)" class="flap-text">Lucid Dream Trigger Machine</span></h1>
+    <p class="summary">
+      A device that triggers lucid dreams during REM sleep. Instead of being worn, the
+      addressable LED strip is mounted on the bed headboard and delivers gentle light cues
+      while you sleep. Everything is configured through its own on-device web interface.
+    </p>
+
+    <div class="datasheet">
+      <div class="cell"><div class="k">MCU</div><div class="v">ESP32&#8209;C3 Super Mini</div></div>
+      <div class="cell"><div class="k">LIGHTING</div><div class="v">WS2812B (addressable strip)</div></div>
+      <div class="cell"><div class="k">CONFIG</div><div class="v">Captive portal / web UI</div></div>
+      <div class="cell"><div class="k">STORAGE</div><div class="v">Persistent settings (NVS)</div></div>
+      <div class="cell"><div class="k">FORM&nbsp;FACTOR</div><div class="v">Headboard&#8209;mounted</div></div>
+      <div class="cell"><div class="k">STATUS</div><div class="v">In development, UI polish</div></div>
+    </div>
+  </div>
+</header>
+
+<main class="section buildlog">
+  <div class="wrap">
+
+    <div class="tbd-banner" data-reveal>
+      ⚠ PHOTOS/GIFS NOT UPLOADED YET. The slots below are placeholders.
+    </div>
+
+    <div class="buildlog-list">
+
+      <article class="step" data-reveal>
+        <div class="step-index">01</div>
+        <div>
+          <span class="step-tag">STAGE 01</span>
+          <h3>Base firmware + WS2812B</h3>
+          <p>The ESP32&#8209;C3 Super Mini drives an addressable LED strip. First tests of pattern output and brightness.</p>
+          <div class="gallery-grid">
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;01</p></figure>
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;02</p></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="step" data-reveal>
+        <div class="step-index">02</div>
+        <div>
+          <span class="step-tag">STAGE 02</span>
+          <h3>Captive portal and settings web UI</h3>
+          <p>The device spins up its own access point and settings page, no reflashing needed to change parameters.</p>
+          <div class="gallery-grid">
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>SCREENSHOT&nbsp;01</p></figure>
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>GIF&nbsp;01</p></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="step" data-reveal>
+        <div class="step-index">03</div>
+        <div>
+          <span class="step-tag">STAGE 03</span>
+          <h3>Persistent settings</h3>
+          <p>Brightness, animation type and timing now survive a reboot thanks to onboard NVS storage.</p>
+          <div class="gallery-grid">
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;01</p></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="step" data-reveal>
+        <div class="step-index">04</div>
+        <div>
+          <span class="step-tag">STAGE 04</span>
+          <h3>Animation types + button logic</h3>
+          <p>Added several stimulation modes plus short/long press handling on the button to cycle through them.</p>
+          <div class="gallery-grid">
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>GIF&nbsp;01</p></figure>
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;01</p></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="step" data-reveal>
+        <div class="step-index">05</div>
+        <div>
+          <span class="step-tag">STAGE 05 - CURRENT</span>
+          <h3>UI polish</h3>
+          <p>Refining the web interface and overall setup experience ahead of the final enclosure build.</p>
+          <div class="gallery-grid">
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;01</p></figure>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>MOD&#8209;01 LDTM</p>
+    <div class="footer-links">
+      <a href="../index.html">← All projects</a>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">✕</span>
+  <div class="lightbox-content"></div>
+</div>
+
+<script src="../assets/js/particles.js"></script>
+<script src="../assets/js/flap.js"></script>
+<script src="../assets/js/scrollbar.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meshtastic Node // MOS1</title>
+<meta name="description" content="A 9 euro homemade Meshtastic node on an ESP32-S3 and a Xiao 868MHz radio module.">
+
+<link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="status-badge-fixed">
+  <span class="dot-live"></span>
+  <span>SYSTEM STATUS: ONLINE</span>
+</div>
+
+<div class="altimeter" id="altimeter">
+  <div class="tape" id="altTape"></div>
+  <div class="pointer-line"></div>
+  <div class="value-box" id="altValue">000</div>
+</div>
+
+<div class="logo-corner">
+  <a href="../index.html"><img src="../assets/img/logo-mos1.png" alt="Back to MOS1 projects"></a>
+</div>
+
+<div class="wrap">
+  <p class="breadcrumb"><a href="../index.html">Projects</a> / MOD&#8209;11 / Meshtastic Node</p>
+</div>
+
+<header class="project-hero">
+  <div class="wrap">
+    <p class="eyebrow"><span class="status stable">STABLE</span></p>
+    <h1>Meshtastic <span style="color:var(--signal)" class="flap-text">Node</span></h1>
+    <p class="summary">
+      A homemade Meshtastic node built on an ESP32&#8209;S3 paired with a Xiao 868MHz radio module, powered by two 850mAh cells recycled from disposable vapes, with a 128x64 SSD1306 display. Real world range came out to around 1.7 to 2.2km, mostly limited by dense urban buildings. The real win is the price, about 9 euros total.
+    </p>
+
+    <div class="datasheet">
+      <div class="cell"><div class="k">MCU</div><div class="v">ESP32-S3 + Xiao 868MHz</div></div>
+      <div class="cell"><div class="k">BATTERY</div><div class="v">2x 850mAh (recycled vape cells)</div></div>
+      <div class="cell"><div class="k">DISPLAY</div><div class="v">SSD1306 128x64</div></div>
+      <div class="cell"><div class="k">RANGE</div><div class="v">~1.7-2.2 km (urban)</div></div>
+      <div class="cell"><div class="k">COST</div><div class="v">~9 EUR</div></div>
+    </div>
+  </div>
+</header>
+
+<main class="section buildlog">
+  <div class="wrap">
+
+    <div class="tbd-banner" data-reveal>
+      &#9888; PHOTOS/GIFS NOT UPLOADED YET. The slots below are placeholders.
+    </div>
+
+    <div class="gallery-grid">
+      <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;01</p></figure>
+      <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;02</p></figure>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>MOD&#8209;11 MESHTASTIC NODE</p>
+    <div class="footer-links">
+      <a href="../index.html">&larr; All projects</a>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">&#10005;</span>
+  <div class="lightbox-content"></div>
+</div>
+
+<script src="../assets/js/particles.js"></script>
+<script src="../assets/js/flap.js"></script>
+<script src="../assets/js/scrollbar.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

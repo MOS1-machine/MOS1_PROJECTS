@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LoadOmeter // MOS1</title>
+<meta name="description" content="LoadOmeter, a hardware PC load monitor on an Arduino Nano with analog gauges and OLEDs. Build log, photos and gifs.">
+
+<link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="status-badge-fixed">
+  <span class="dot-live"></span>
+  <span>SYSTEM STATUS: ONLINE</span>
+</div>
+
+<div class="altimeter" id="altimeter">
+  <div class="tape" id="altTape"></div>
+  <div class="pointer-line"></div>
+  <div class="value-box" id="altValue">000</div>
+</div>
+
+<div class="logo-corner">
+  <a href="../index.html"><img src="../assets/img/logo-mos1.png" alt="Back to MOS1 projects"></a>
+</div>
+
+<div class="wrap">
+  <p class="breadcrumb"><a href="../index.html">Projects</a> / MOD&#8209;03 / LoadOmeter</p>
+</div>
+
+<header class="project-hero">
+  <div class="wrap">
+    <p class="eyebrow"><span class="status stable">STABLE</span></p>
+    <h1>Load<span style="color:var(--signal)" class="flap-text">Ometer</span></h1>
+    <p class="summary">
+      A hardware PC load monitor: a pair of analog gauges and two OLED screens show CPU/GPU load
+      in real time, with NeoPixel lighting for extra color feedback. Data comes from a Python
+      pipeline built on OpenHardwareMonitor.
+    </p>
+
+    <div class="datasheet">
+      <div class="cell"><div class="k">MCU</div><div class="v">Arduino Nano</div></div>
+      <div class="cell"><div class="k">DISPLAY</div><div class="v">2×SSD1306 OLED</div></div>
+      <div class="cell"><div class="k">GAUGES</div><div class="v">Analog (repurposed voltmeters)</div></div>
+      <div class="cell"><div class="k">LIGHTING</div><div class="v">NeoPixel</div></div>
+      <div class="cell"><div class="k">DATA</div><div class="v">Python + OpenHardwareMonitor</div></div>
+      <div class="cell"><div class="k">LAUNCH</div><div class="v">Tray launcher (.exe)</div></div>
+    </div>
+  </div>
+</header>
+
+<main class="section buildlog">
+  <div class="wrap">
+
+    <div class="tbd-banner" data-reveal>
+      ⚠ PHOTOS/GIFS NOT UPLOADED YET. The slots below are placeholders.
+    </div>
+
+    <div class="buildlog-list">
+
+      <article class="step" data-reveal>
+        <div class="step-index">01</div>
+        <div>
+          <span class="step-tag">STAGE 01</span>
+          <h3>Wiring: Arduino Nano + 2×OLED + analog gauges</h3>
+          <p>Base circuit: the Nano drives two OLED displays and a pair of analog voltmeters repurposed as load gauges.</p>
+          <div class="gallery-grid">
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;01</p></figure>
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;02</p></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="step" data-reveal>
+        <div class="step-index">02</div>
+        <div>
+          <span class="step-tag">STAGE 02</span>
+          <h3>NeoPixel load indication</h3>
+          <p>Added LED lighting that tracks CPU/GPU load, with color and brightness that shift with the readings.</p>
+          <div class="gallery-grid">
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>GIF&nbsp;01</p></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="step" data-reveal>
+        <div class="step-index">03</div>
+        <div>
+          <span class="step-tag">STAGE 03</span>
+          <h3>Python pipeline (OpenHardwareMonitor → Serial)</h3>
+          <p>A desktop script reads sensor data through OpenHardwareMonitor and streams it to the Arduino over Serial.</p>
+          <div class="gallery-grid">
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>SCREENSHOT&nbsp;01</p></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="step" data-reveal>
+        <div class="step-index">04</div>
+        <div>
+          <span class="step-tag">STAGE 04 - CURRENT</span>
+          <h3>Tray launcher</h3>
+          <p>The pipeline is compiled to a .exe that runs and is controlled straight from the Windows system tray.</p>
+          <div class="gallery-grid">
+            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;01</p></figure>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>MOD&#8209;03 LOADOMETER</p>
+    <div class="footer-links">
+      <a href="../index.html">← All projects</a>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">✕</span>
+  <div class="lightbox-content"></div>
+</div>
+
+<script src="../assets/js/particles.js"></script>
+<script src="../assets/js/flap.js"></script>
+<script src="../assets/js/scrollbar.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

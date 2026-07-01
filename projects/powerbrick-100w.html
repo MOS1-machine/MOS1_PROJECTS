@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerBrick 100W // MOS1</title>
+<meta name="description" content="PowerBrick 100W, a high capacity 18650 powerbank with 100W USB-C PD and a direct 4S XT60 tap.">
+
+<link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="status-badge-fixed">
+  <span class="dot-live"></span>
+  <span>SYSTEM STATUS: ONLINE</span>
+</div>
+
+<div class="altimeter" id="altimeter">
+  <div class="tape" id="altTape"></div>
+  <div class="pointer-line"></div>
+  <div class="value-box" id="altValue">000</div>
+</div>
+
+<div class="logo-corner">
+  <a href="../index.html"><img src="../assets/img/logo-mos1.png" alt="Back to MOS1 projects"></a>
+</div>
+
+<div class="wrap">
+  <p class="breadcrumb"><a href="../index.html">Projects</a> / MOD&#8209;04 / PowerBrick 100W</p>
+</div>
+
+<header class="project-hero">
+  <div class="wrap">
+    <p class="eyebrow"><span class="status stable">STABLE</span></p>
+    <h1>PowerBrick <span style="color:var(--signal)" class="flap-text">100W</span></h1>
+    <p class="summary">
+      A high capacity powerbank built around a 4S2P pack of 18650 cells, 3200mAh and 3.7V each, for roughly 26000mAh at 3.7V, or about 96.2Wh total. A 5S capable BMS board with active balancing handles charging and protection, exposing bidirectional USB-C up to 100W with fast charging protocols, micro-USB, two USB-A 3.0 ports and a Lightning port, plus a barrel DC jack. Everything lives inside a custom enclosure modeled in Blender and 3D printed. An XT60 connector wired directly to the 16.8V, 4S pack adds a high current tap, handy for an FPV drone or for powering expansion modules like the lab power supply.
+    </p>
+
+    <div class="datasheet">
+      <div class="cell"><div class="k">CELLS</div><div class="v">4S2P 18650, 3200mAh</div></div>
+      <div class="cell"><div class="k">CAPACITY</div><div class="v">~26000mAh @ 3.7V (96.2Wh)</div></div>
+      <div class="cell"><div class="k">BMS</div><div class="v">5S, active balancing</div></div>
+      <div class="cell"><div class="k">PORTS</div><div class="v">USB-C PD 100W, 2x USB-A, micro-USB, Lightning, DC barrel</div></div>
+      <div class="cell"><div class="k">EXTRA</div><div class="v">XT60 direct 16.8V (4S) tap</div></div>
+      <div class="cell"><div class="k">ENCLOSURE</div><div class="v">Custom, Blender + FDM print</div></div>
+    </div>
+  </div>
+</header>
+
+<main class="section buildlog">
+  <div class="wrap">
+
+    <div class="tbd-banner" data-reveal>
+      &#9888; PHOTOS/GIFS NOT UPLOADED YET. The slots below are placeholders.
+    </div>
+
+    <div class="gallery-grid">
+      <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;01</p></figure>
+      <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;02</p></figure>
+      <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;03</p></figure>
+      <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;04</p></figure>
+      </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>MOD&#8209;04 POWERBRICK 100W</p>
+    <div class="footer-links">
+      <a href="../index.html">&larr; All projects</a>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">&#10005;</span>
+  <div class="lightbox-content"></div>
+</div>
+
+<script src="../assets/js/particles.js"></script>
+<script src="../assets/js/flap.js"></script>
+<script src="../assets/js/scrollbar.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

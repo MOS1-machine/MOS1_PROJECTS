@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOS1 | Projects</title>
+<meta name="description" content="MOS1 project gallery: custom electronics, ESP32 firmware and handmade devices, build logs included.">
+
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="status-badge-fixed">
+  <span class="dot-live"></span>
+  <span>SYSTEM STATUS: ONLINE</span>
+</div>
+
+<div class="altimeter" id="altimeter">
+  <div class="tape" id="altTape"></div>
+  <div class="pointer-line"></div>
+  <div class="value-box" id="altValue">000</div>
+</div>
+
+<img src="assets/img/logo-mos1.png" alt="MOS1" id="logoFloat" class="logo-float">
+
+<header class="hero">
+  <div class="hero-vignette"></div>
+  <div class="hero-content wrap">
+    <div class="hud-frame">
+      <div class="logo-slot" id="logoSlot"></div>
+      <p class="hero-subtitle" id="heroSubtitle">PROJECTS</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="card-grid">
+
+        <!-- MOD-01 -->
+        <article class="card" data-reveal>
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="card-thumb">
+            <!-- TODO: replace with <img src="assets/img/projects/ldtm/cover.jpg" alt="LDTM"> -->
+            <p class="ph-label"><span class="icon">▣</span>COVER&nbsp;PHOTO</p>
+          </div>
+          <div class="card-row">
+            <span class="tag">MOD&#8209;01</span>
+            <span class="status dev">IN&nbsp;DEV</span>
+          </div>
+          <div class="card-body">
+            <h3>LDTM</h3>
+            <p>Lucid Dream Trigger Machine mounted on the bed headboard, REM-phase light cues from an addressable LED strip.</p>
+            <div class="specs-mini">
+              <span><b>MCU</b> ESP32&#8209;C3 Super Mini</span>
+            </div>
+            <span class="card-link">Open build log <span class="arrow">→</span></span>
+          </div>
+          <a href="projects/ldtm.html" class="card-full-link" aria-label="Open the LDTM project"></a>
+        </article>
+
+        <!-- MOD-02 -->
+        <article class="card" data-reveal>
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="card-thumb">
+            <!-- TODO: replace with <img src="assets/img/projects/ultimate-mouse/cover.jpg" alt="Ultimate Mouse"> -->
+            <p class="ph-label"><span class="icon">▣</span>COVER&nbsp;PHOTO</p>
+          </div>
+          <div class="card-row">
+            <span class="tag">MOD&#8209;02</span>
+            <span class="status active">ACTIVE</span>
+          </div>
+          <div class="card-body">
+            <h3>Ultimate Mouse</h3>
+            <p>5-in-1 custom gaming mouse that switches between mouse, gamepad and HOTAS on the fly.</p>
+            <div class="specs-mini">
+              <span><b>MCU</b> ESP32&#8209;S3 Super Mini</span>
+            </div>
+            <span class="card-link">Open build log <span class="arrow">→</span></span>
+          </div>
+          <a href="projects/ultimate-mouse.html" class="card-full-link" aria-label="Open the Ultimate Mouse project"></a>
+        </article>
+
+        <!-- MOD-03 -->
+        <article class="card" data-reveal>
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="card-thumb">
+            <!-- TODO: replace with <img src="assets/img/projects/loadometer/cover.jpg" alt="LoadOmeter"> -->
+            <p class="ph-label"><span class="icon">▣</span>COVER&nbsp;PHOTO</p>
+          </div>
+          <div class="card-row">
+            <span class="tag">MOD&#8209;03</span>
+            <span class="status stable">STABLE</span>
+          </div>
+          <div class="card-body">
+            <h3>LoadOmeter</h3>
+            <p>Hardware PC load monitor with analog gauges and dual OLEDs fed by a live sensor pipeline.</p>
+            <div class="specs-mini">
+              <span><b>MCU</b> Arduino Nano</span>
+            </div>
+            <span class="card-link">Open build log <span class="arrow">→</span></span>
+          </div>
+          <a href="projects/loadometer.html" class="card-full-link" aria-label="Open the LoadOmeter project"></a>
+        </article>
+
+        <!-- MOD-04 free slot -->
+        <article class="card" data-reveal>
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="card-thumb">
+            <!-- TODO: replace with <img src="assets/img/projects/powerbrick-100w/cover.jpg" alt="PowerBrick 100W"> -->
+            <p class="ph-label"><span class="icon">▣</span>COVER&nbsp;PHOTO</p>
+          </div>
+          <div class="card-row">
+            <span class="tag">MOD&#8209;04</span>
+            <span class="status stable">STABLE</span>
+          </div>
+          <div class="card-body">
+            <h3>PowerBrick 100W</h3>
+            <p>High capacity 18650 powerbank with 100W USB-C PD and a direct 4S XT60 tap.</p>
+            <span class="card-link">Open build log <span class="arrow">→</span></span>
+          </div>
+          <a href="projects/powerbrick-100w.html" class="card-full-link" aria-label="Open the PowerBrick 100W project"></a>
+        </article>
+
+        <article class="card" data-reveal>
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="card-thumb">
+            <!-- TODO: replace with <img src="assets/img/projects/cat-monitor/cover.jpg" alt="Cat Monitor"> -->
+            <p class="ph-label"><span class="icon">▣</span>COVER&nbsp;PHOTO</p>
+          </div>
+          <div class="card-row">
+            <span class="tag">MOD&#8209;05</span>
+            <span class="status active">ACTIVE</span>
+          </div>
+          <div class="card-body">
+            <h3>Cat Monitor "Kerfus"</h3>
+            <p>A pixel cat companion with touch reactions, idle animation and a weather screen.</p>
+            <div class="specs-mini">
+              <span><b>MCU</b> ESP32-C3</span>
+            </div>
+            <span class="card-link">Open build log <span class="arrow">→</span></span>
+          </div>
+          <a href="projects/cat-monitor.html" class="card-full-link" aria-label="Open the Cat Monitor project"></a>
+        </article>
+
+        <article class="card" data-reveal>
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="card-thumb">
+            <!-- TODO: replace with <img src="assets/img/projects/nano-leaf/cover.jpg" alt="5 EUR Nano Leaf"> -->
+            <p class="ph-label"><span class="icon">▣</span>COVER&nbsp;PHOTO</p>
+          </div>
+          <div class="card-row">
+            <span class="tag">MOD&#8209;06</span>
+            <span class="status stable">STABLE</span>
+          </div>
+          <div class="card-body">
+            <h3>5&euro; Nano Leaf</h3>
+            <p>7 triangle wall panels with RGB inside, modeled and printed in house. Total cost around 5 euros.</p>
+            <span class="card-link">Open build log <span class="arrow">→</span></span>
+          </div>
+          <a href="projects/nano-leaf.html" class="card-full-link" aria-label="Open the 5 EUR Nano Leaf project"></a>
+        </article>
+
+        <article class="card" data-reveal>
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="card-thumb">
+            <!-- TODO: replace with <img src="assets/img/projects/odradek-lamp/cover.jpg" alt="Odradek Lamp"> -->
+            <p class="ph-label"><span class="icon">▣</span>COVER&nbsp;PHOTO</p>
+          </div>
+          <div class="card-row">
+            <span class="tag">MOD&#8209;07</span>
+            <span class="status active">ACTIVE</span>
+          </div>
+          <div class="card-body">
+            <h3>Odradek Lamp</h3>
+            <p>A posable, RGB lit desk lamp inspired by the Odradek scanner.</p>
+            <span class="card-link">Open build log <span class="arrow">→</span></span>
+          </div>
+          <a href="projects/odradek-lamp.html" class="card-full-link" aria-label="Open the Odradek Lamp project"></a>
+        </article>
+
+        <article class="card" data-reveal>
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="card-thumb">
+            <!-- TODO: replace with <img src="assets/img/projects/lab-power-supply/cover.jpg" alt="Lab Power Supply"> -->
+            <p class="ph-label"><span class="icon">▣</span>COVER&nbsp;PHOTO</p>
+          </div>
+          <div class="card-row">
+            <span class="tag">MOD&#8209;08</span>
+            <span class="status stable">STABLE</span>
+          </div>
+          <div class="card-body">
+            <h3>Lab Power Supply</h3>
+            <p>A 0 to 16V bench supply with adjustable current limiting, powered off PowerBrick.</p>
+            <span class="card-link">Open build log <span class="arrow">→</span></span>
+          </div>
+          <a href="projects/lab-power-supply.html" class="card-full-link" aria-label="Open the Lab Power Supply project"></a>
+        </article>
+
+        <article class="card" data-reveal>
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="card-thumb">
+            <!-- TODO: replace with <img src="assets/img/projects/rc-blinker/cover.jpg" alt="RC Blinker"> -->
+            <p class="ph-label"><span class="icon">▣</span>COVER&nbsp;PHOTO</p>
+          </div>
+          <div class="card-row">
+            <span class="tag">MOD&#8209;09</span>
+            <span class="status tbd">TBD</span>
+          </div>
+          <div class="card-body">
+            <h3>RC Blinker</h3>
+            <p>A radio controlled blinker module. Details coming soon.</p>
+
+            <span class="card-link">Open build log <span class="arrow">→</span></span>
+          </div>
+          <a href="projects/rc-blinker.html" class="card-full-link" aria-label="Open the RC Blinker project"></a>
+        </article>
+
+        <article class="card" data-reveal>
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="card-thumb">
+            <!-- TODO: replace with <img src="assets/img/projects/fpv-drone/cover.jpg" alt="FPV Drone"> -->
+            <p class="ph-label"><span class="icon">▣</span>COVER&nbsp;PHOTO</p>
+          </div>
+          <div class="card-row">
+            <span class="tag">MOD&#8209;10</span>
+            <span class="status active">ACTIVE</span>
+          </div>
+          <div class="card-body">
+            <h3>FPV Drone</h3>
+            <p>A 4S, 5 inch analog FPV drone with GPS and a 2 to 2.5km range.</p>
+            <span class="card-link">Open build log <span class="arrow">→</span></span>
+          </div>
+          <a href="projects/fpv-drone.html" class="card-full-link" aria-label="Open the FPV Drone project"></a>
+        </article>
+
+        <article class="card" data-reveal>
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="card-thumb">
+            <!-- TODO: replace with <img src="assets/img/projects/meshtastic-node/cover.jpg" alt="Meshtastic Node"> -->
+            <p class="ph-label"><span class="icon">▣</span>COVER&nbsp;PHOTO</p>
+          </div>
+          <div class="card-row">
+            <span class="tag">MOD&#8209;11</span>
+            <span class="status stable">STABLE</span>
+          </div>
+          <div class="card-body">
+            <h3>Meshtastic Node</h3>
+            <p>A 9 euro homemade Meshtastic node built on an ESP32-S3 and a Xiao radio.</p>
+            <div class="specs-mini">
+              <span><b>MCU</b> ESP32-S3 + Xiao 868MHz</span>
+            </div>
+            <span class="card-link">Open build log <span class="arrow">→</span></span>
+          </div>
+          <a href="projects/meshtastic-node.html" class="card-full-link" aria-label="Open the Meshtastic Node project"></a>
+        </article>
+
+        <article class="card" data-reveal>
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="card-thumb">
+            <!-- TODO: replace with <img src="assets/img/projects/printed-objects/cover.jpg" alt="3D Printed Objects"> -->
+            <p class="ph-label"><span class="icon">▣</span>COVER&nbsp;PHOTO</p>
+          </div>
+          <div class="card-row">
+            <span class="tag">MOD&#8209;12</span>
+            <span class="status active">ACTIVE</span>
+          </div>
+          <div class="card-body">
+            <h3>3D Printed Objects</h3>
+            <p>An ongoing collection of small prints, from phone cases to random parts.</p>
+            <span class="card-link">Open build log <span class="arrow">→</span></span>
+          </div>
+          <a href="projects/printed-objects.html" class="card-full-link" aria-label="Open the 3D Printed Objects project"></a>
+        </article>
+
+        <article class="card" data-reveal>
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="card-thumb">
+            <!-- TODO: replace with <img src="assets/img/projects/nfc-music/cover.jpg" alt="NFC Music Machine"> -->
+            <p class="ph-label"><span class="icon">▣</span>COVER&nbsp;PHOTO</p>
+          </div>
+          <div class="card-row">
+            <span class="tag">MOD&#8209;13</span>
+            <span class="status dev">IN DEV</span>
+          </div>
+          <div class="card-body">
+            <h3>NFC Music Machine</h3>
+            <p>An NFC triggered music player, still early in development.</p>
+            <span class="card-link">Open build log <span class="arrow">→</span></span>
+          </div>
+          <a href="projects/nfc-music.html" class="card-full-link" aria-label="Open the NFC Music Machine project"></a>
+        </article>
+
+        <article class="card" data-reveal>
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="card-thumb">
+            <!-- TODO: replace with <img src="assets/img/projects/mini-nano-powerbanks/cover.jpg" alt="Mini and Nano Powerbanks"> -->
+            <p class="ph-label"><span class="icon">▣</span>COVER&nbsp;PHOTO</p>
+          </div>
+          <div class="card-row">
+            <span class="tag">MOD&#8209;14</span>
+            <span class="status stable">STABLE</span>
+          </div>
+          <div class="card-body">
+            <h3>Mini &amp; Nano Powerbanks</h3>
+            <p>Two pocket powerbanks built from recycled vape cells.</p>
+            <span class="card-link">Open build log <span class="arrow">→</span></span>
+          </div>
+          <a href="projects/mini-nano-powerbanks.html" class="card-full-link" aria-label="Open the Mini and Nano Powerbanks project"></a>
+        </article>
+
+        <article class="card" data-reveal>
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="card-thumb">
+            <!-- TODO: replace with <img src="assets/img/projects/nixie-clock/cover.jpg" alt="Nixie Clock"> -->
+            <p class="ph-label"><span class="icon">▣</span>COVER&nbsp;PHOTO</p>
+          </div>
+          <div class="card-row">
+            <span class="tag">MOD&#8209;15</span>
+            <span class="status tbd">TBD</span>
+          </div>
+          <div class="card-body">
+            <h3>Nixie Clock</h3>
+            <p>A clock built around IN-12B nixie tubes, driven by an Arduino Nano.</p>
+            <div class="specs-mini">
+              <span><b>MCU</b> Arduino Nano</span>
+            </div>
+            <span class="card-link">Open build log <span class="arrow">→</span></span>
+          </div>
+          <a href="projects/nixie-clock.html" class="card-full-link" aria-label="Open the Nixie Clock project"></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>BUILD LOG</p>
+    <div class="footer-links">
+      <a href="https://github.com/MOS1-machine" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/scrollbar.js"></script>
+<script src="assets/js/logo-scroll.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
