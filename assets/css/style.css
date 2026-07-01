@@ -121,6 +121,7 @@ body::before{
   letter-spacing: .32em;
   color: var(--text-muted);
   text-align: center;
+  width: 100%;
   transition: opacity .15s linear, transform .15s linear;
 }
 
