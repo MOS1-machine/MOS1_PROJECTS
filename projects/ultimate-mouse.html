@@ -59,10 +59,6 @@
 <main class="section buildlog">
   <div class="wrap">
 
-    <div class="tbd-banner" data-reveal>
-      ⚠ PHOTOS/GIFS NOT UPLOADED YET. The slots below are placeholders.
-    </div>
-
     <div class="buildlog-list">
 
       <article class="step" data-reveal>
@@ -72,8 +68,8 @@
           <h3>Base platform: ESP32&#8209;S3 + PMW3360 + OLED</h3>
           <p>First working firmware: the PMW3360 optical sensor outputs coordinates, the SSD1306 renders bitmap UI.</p>
           <div class="gallery-grid">
-            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;01</p></figure>
-            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;02</p></figure>
+            <figure class="gallery-item" data-full="../assets/img/projects/ultimate-mouse/photo-01.jpg"><img src="../assets/img/projects/ultimate-mouse/photo-01.jpg" alt=""></figure>
+            <figure class="gallery-item" data-full="../assets/img/projects/ultimate-mouse/photo-02.jpg"><img src="../assets/img/projects/ultimate-mouse/photo-02.jpg" alt=""></figure>
           </div>
         </div>
       </article>
@@ -85,7 +81,7 @@
           <h3>IMU + rotary encoder</h3>
           <p>Added the MPU&#8209;6500 via direct I2C register access and wired up a rotary encoder; fixed its spin direction.</p>
           <div class="gallery-grid">
-            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;01</p></figure>
+            <figure class="gallery-item" data-full="../assets/img/projects/ultimate-mouse/photo-03.jpg"><img src="../assets/img/projects/ultimate-mouse/photo-03.jpg" alt=""></figure>
           </div>
         </div>
       </article>
@@ -97,7 +93,7 @@
           <h3>Joystick calibration</h3>
           <p>Fixed an ADC range mismatch in the analog joystick and throttle slider axis calibration.</p>
           <div class="gallery-grid">
-            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>GIF&nbsp;01</p></figure>
+            <figure class="gallery-item" data-full="../assets/img/projects/ultimate-mouse/photo-04.jpg"><img src="../assets/img/projects/ultimate-mouse/photo-04.jpg" alt=""></figure>
           </div>
         </div>
       </article>
@@ -109,7 +105,7 @@
           <h3>Cursor drift fix</h3>
           <p>Tracked down and fixed the cause of unwanted cursor movement in mouse mode.</p>
           <div class="gallery-grid">
-            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;01</p></figure>
+            <figure class="gallery-item" data-full="../assets/img/projects/ultimate-mouse/video-01.mp4"><video src="../assets/img/projects/ultimate-mouse/video-01.mp4" autoplay muted loop playsinline></video></figure>
           </div>
         </div>
       </article>
@@ -120,9 +116,6 @@
           <span class="step-tag">ITERATION 05</span>
           <h3>Gyro calibration + smoothing</h3>
           <p>Fine-tuned the IMU: gyroscope calibration and reading smoothing for a stable response in GPAD / HOTAS modes.</p>
-          <div class="gallery-grid">
-            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>GIF&nbsp;01</p></figure>
-          </div>
         </div>
       </article>
 
@@ -132,10 +125,6 @@
           <span class="step-tag">ITERATION 06</span>
           <h3>Macro-button multiplexer + radio link</h3>
           <p>Added a CD74HC4067 multiplexer for extra buttons and an NRF24L01+PA+LNA module for wireless 2.4G mode.</p>
-          <div class="gallery-grid">
-            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;01</p></figure>
-            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>PHOTO&nbsp;02</p></figure>
-          </div>
         </div>
       </article>
 
@@ -145,9 +134,6 @@
           <span class="step-tag">ITERATION 07 - CURRENT</span>
           <h3>5 device modes + macro recording</h3>
           <p>Implemented GAME / MOUSE / GPAD / HOTAS / HOTAS+ modes plus a system for recording and replaying macros.</p>
-          <div class="gallery-grid">
-            <figure class="gallery-item"><p class="ph-label"><span class="icon">▣</span>GIF&nbsp;01</p></figure>
-          </div>
         </div>
       </article>
 

@@ -29,7 +29,7 @@
 
     var w    = lerp(startWidth, cornerWidth, e);
     var top  = lerp(startTop - window.scrollY, CORNER_TOP, e);
-    var left = lerp((window.innerWidth - startWidth) / 2, CORNER_LEFT, e);
+    var left = lerp((window.innerWidth - w) / 2 - window.innerWidth * 0.02, CORNER_LEFT, e);
 
     logo.style.position  = 'fixed';
     logo.style.top       = top + 'px';
